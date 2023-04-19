@@ -1,0 +1,139 @@
+/*Poppins Font*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+body{
+    background: url(images/bg-intro-desktop.png) no-repeat;
+    background-color: var(--Red);
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%; 
+    margin: 0 auto;   
+}
+.left{
+    color: #fff;
+    width: 100%;
+}
+.left h1{
+    font-weight: 700;
+    font-size: 3em;
+}
+.left p{
+    font-weight: 400;
+    padding-top: 8%;
+    line-height: 1.8rem;
+}
+.right{
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+}
+.top{
+    background-color: var(--Blue);
+    color: #fff;  
+    padding: 1rem;     
+    font-weight: 400;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: rgba(0, 0,0,0.2) 0 5px 0 0;
+}
+.top span{
+    font-weight: 400;
+}
+.right h1{
+    font-size: 1rem;
+}
+form{
+    background-color: #fff;
+    padding: 2rem;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+input, button{
+    width: 100%;
+    font-weight: 600;
+    padding: 1rem;
+    padding-right: 50%;
+    border: 1px solid rgba(0,0,0,0.2);
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+   
+}
+.submit{
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--Green);
+    color:#fff;
+    box-shadow: rgba(0, 0,0,0.2) 0 5px 0 0;
+    text-transform: uppercase;  
+    border: none;
+}
+.right p{
+    font-size: 0.7rem;
+    color: var(--Grayish-Blue);
+    text-align: center;
+    margin: 0;
+}
+#link{
+    color: var(--Red);
+    font-family: 600;
+}
+input:focus, button:focus{
+    outline: none;
+    border: 1px solid var(--Red);
+}
+@media screen and (max-width:768px){
+    body{
+    background: url(images/bg-intro-mobile.png) no-repeat cover; 
+    background-color: var(--Red);   
+    overflow-x: hidden;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    .left h1{
+        font-size: 2rem;
+        margin-top: 3rem;
+        margin-left: 3rem;
+    }
+    .left p{
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    .top{
+       padding: 1rem 3rem;
+       margin: 0 0.5rem;
+    }
+    input, button{
+        padding-right: 4rem;
+    }
+    .submit{
+       width: 100%;
+    }
+}
